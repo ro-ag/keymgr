@@ -11,7 +11,7 @@ The Credentials will be stored with the Following format.
     - format:
     - *['program name']~['Server name or Address']*
     
-###Example
+### Example
 *This is a dummy connect and returns an int value*.
 
 ```go
