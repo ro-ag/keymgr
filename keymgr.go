@@ -117,6 +117,5 @@ func (P *Cred) Login(CallBack func(CallArgs, *int) interface{}) (OutLogin interf
 	// Clear Credentials for Security
 	argsBack.User = ""
 	argsBack.Pass = ""
-	log.Printf("%# v\n", pretty.Formatter(OutLogin))
 	return OutLogin
 }
