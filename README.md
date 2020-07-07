@@ -18,7 +18,7 @@ The Credentials will be stored with the Following format.
 package main
 import (
 	"fmt"
-	"gopkg.in/rod-go/keymgr.v1"
+	"gopkg.in/ro-ag/keymgr.v1"
 )
 
 // This example prepares the keymgr.Cred type
