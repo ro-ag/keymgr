@@ -58,15 +58,15 @@ func (P *Cred) validation() {
 // This function needs a CallBack function with interface return
 // The Flow Actions in Login function:
 //  1.- Check if Credentials with name "*[Program]~[Target]*" exits
-//      1.1.- If exists go to step 6
+//      1.1.- If exists go to step 5
 //  2.- Run a GUI to prompt user and password
 //  3.- Store Credentials in Windows Credential Manager
-//  5.- Load Credentials ( check if works )
-//  6.- Run "CallBack" function
-//      6.1 - If status is not 0 remove credentials
-//      6.2 - Go to Step 2
-//      6.3 - if Attempts is >= Limit return nil
-//  7.- Return "CallBack" interface
+//  4.- Load Credentials ( check if works )
+//  5.- Run "CallBack" function
+//      5.1 - If status is not 0 remove credentials
+//      5.2 - Go to Step 2
+//      5.3 - if Attempts is >= Limit return nil
+//  6.- Return "CallBack" interface
 func (P *Cred) Login(CallBack func(CallArgs, *int) interface{}) (OutLogin interface{}) {
 	P.validation()
 
