@@ -25,15 +25,15 @@ import (
 // Login function needs a CallBack type function with interface return
 // The Flow Actions in Login function ( this example ):
 //  1.- Check if Credentials with name *[keymgr]~[test]* exits
-//      1.1.- If exists go to step 6
+//      1.1.- If exists go to step 5
 //  2.- Run a GUI to prompt user and password
 //  3.- Store Credentials in Windows Credential Manager
-//  5.- Load Credentials ( check if works )
-//  6.- Run connect function
-//      6.1 - If status is not 0 remove credentials
-//      6.2 - Go to Step 2
-//      6.3 - if Attempts is >= Limit return nil
-//  7.- Return connect interface
+//  4.- Load Credentials ( check if works )
+//  5.- Run connect function
+//      5.1 - If status is not 0 remove credentials
+//      5.2 - Go to Step 2
+//      5.3 - if Attempts is >= Limit return nil
+//  6.- Return connect interface
 
 func main() {
 	Parameters := keymgr.Cred{
